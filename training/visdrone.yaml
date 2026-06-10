@@ -1,0 +1,21 @@
+# VisDrone2019-DET — YOLO 데이터 설정
+# 경로는 이 저장소 루트 기준 상대경로. 데이터는 data/download_visdrone.py 로 준비.
+# (전처리/증강 데이터를 쓰려면 train 경로만 교체)
+
+path: datasets/VisDrone
+train: VisDrone2019-DET-train/images
+val: VisDrone2019-DET-val/images
+test: VisDrone2019-DET-test-dev/images
+
+nc: 10
+names:
+  0: pedestrian
+  1: people
+  2: bicycle
+  3: car
+  4: van
+  5: truck
+  6: tricycle
+  7: awning-tricycle
+  8: bus
+  9: motor
